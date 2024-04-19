@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import OurProduct from "./components/OurProduct";
-import Button from "./components/Anchor";
+import Anchor from "./components/Anchor";
 import Footer from "./components/Footer";
 export default function App() {
   return (
@@ -12,9 +12,9 @@ export default function App() {
       </section>
       <section>
         <OurProduct />
-        <Button />
+        <Anchor />
       </section>
-      <section className="mt-20">
+      <section className="mt-32">
         <Footer />
       </section>
     </main>
