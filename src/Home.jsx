@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import OurProduct from "./components/OurProduct";
+import Hero from "./components/homepage/Hero";
+import OurProduct from "./components/homepage/OurProduct";
 import Anchor from "./components/Anchor";
 import Footer from "./components/Footer";
 export default function App() {

@@ -1,5 +1,5 @@
-import Logo from "../assets/logo.png";
-import Circle from "../components/shapes/Circle";
+import Logo from "../../assets/logo.png";
+import Circle from "../shapes/Circle";
 
 const Hero = () => {
   return (

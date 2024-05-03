@@ -14,9 +14,9 @@
 
 @layer components {
   .choosen {
-    @apply w-40  h-12 flex justify-center items-center border-b-2 border-httpx font-montserrat;
+    @apply w-40  h-12 flex justify-center items-center border-b-2 border-httpx font-montserrat transition-colors duration-300;
   }
   .notchoosen {
-    @apply w-40  h-12 flex justify-center items-center;
+    @apply w-40  h-12 flex justify-center items-center font-montserrat;
   }
 }

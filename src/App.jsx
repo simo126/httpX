@@ -1,22 +1,22 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Url from "./components/request/Url";
-import Request from "./components/request/Request";
-import Response from "./components/response/Res";
+import Requestres from "./components/workspace/Requestres";
+import Responseres from "./components/workspace/Responseres";
+import { useState } from "react";
+
 export default function App() {
+  const [response, setResponse] = useState([]);
+  const [loading, setLoading] = useState(false);
+
   return (
     <main>
       <Navbar />
-      <section>
-        <Url />
-        <Request />
-      </section>
-      <section>
-        <Response />
-      </section>
-      <section className="mt-20">
-        <Footer />
-      </section>
+
+      <Requestres setResponse={setResponse} setLoading={setLoading} />
+
+      <Responseres response={response} loading={loading} />
+
+      <Footer />
     </main>
   );
 }
