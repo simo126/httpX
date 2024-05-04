@@ -3,7 +3,7 @@ import { useState } from "react";
 import ResponseBody from "./Options/ResponseBody";
 import ResponseHeader from "./Options/ResponseHeader";
 
-const Response = ({ response }) => {
+const Response = ({ response, loading }) => {
   const [clicked, setClicked] = useState("Response Body");
 
   return (
@@ -30,7 +30,7 @@ const Response = ({ response }) => {
       </ul>
       <div className="overflow-y-hidden">
         {clicked === "Response Body" ? (
-          <ResponseBody response={response} />
+          <ResponseBody response={response} loading={loading} />
         ) : null}
         {clicked === "Response Header" ? (
           <ResponseHeader response={response} />

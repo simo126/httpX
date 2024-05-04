@@ -6,18 +6,20 @@ const Url = ({ setUrl, url, setMethod, method, handleSend }) => {
     <div className="flex mx-56 mt-10 ">
       <select
         name="idk"
+        value={method}
         className="h-12 px-4 text-httpx border-2 border-httpx font-medium font-montserrat"
         onChange={(e) => setMethod(e.target.value)}
       >
         <option value="GET">GET</option>
         <option value="POST">POST</option>
-        <option value="PUT">DELETE</option>
+        <option value="DELETE">DELETE</option>
         <option value="PATCH">PATCH</option>
         <option value="PUT">PUT</option>
       </select>
 
       <input
         type="text"
+        value={url}
         placeholder="Enter URL or paste text"
         className="h-12 w-full font-montserrat py-2 px-2 outline-none border-2 border-gray-300  focus:border-blue-500 "
         onChange={(e) => setUrl(e.target.value)}

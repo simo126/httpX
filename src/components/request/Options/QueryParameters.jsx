@@ -9,6 +9,7 @@ const QueryParameters = ({ setQueryParams, queryParams }) => {
       (queryParameter) => queryParameter.id !== e
     );
     setQueryParams(newQueryParameters);
+    console.log(newQueryParameters);
   };
 
   const handleClick = () => {

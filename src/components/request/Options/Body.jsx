@@ -8,6 +8,10 @@ const Body = ({ setRequestBody, requestBody }) => {
       <div>
         <div className="p-2 h-32 gap-2">
           <textarea
+            cols={30}
+            rows={10}
+            className="w-full h-full border-2"
+            placeholder={"Enter request body"}
             value={requestBody}
             onChange={(e) => setRequestBody(e.target.value)}
           ></textarea>

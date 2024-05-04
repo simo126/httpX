@@ -1,6 +1,6 @@
 import React from "react";
 
-const Status = ({ Status }) => {
+const Status = ({ status }) => {
   return (
     <div>
       <div className="border-2 h-20 mx-56 mt-4">
@@ -8,8 +8,9 @@ const Status = ({ Status }) => {
           Response:
         </h1>
         <p className="mt-2 px-7 font-montserrat">
-          Status: {Status.status || "0"} Time: {Status.time || "0"} Size:{" "}
-          {Status.size || "0"}
+          Status: {status.status || "0"}
+          {status.status < 300 ? " OK" : ""} Time: {status.time || "0"} ms Size:{" "}
+          {status.size || "0"}
         </p>
       </div>
     </div>

@@ -21,20 +21,18 @@ function Request({
         <ul className="flex justify-start items-center h-12  border-b-2">
           {options.map((option) => {
             return (
-              <>
-                <li
-                  className={clicked === option ? "choosen" : "notchoosen"}
-                  key={option}
+              <li
+                className={clicked === option ? "choosen" : "notchoosen"}
+                key={option}
+              >
+                <button
+                  onClick={() => {
+                    setClicked(option);
+                  }}
                 >
-                  <button
-                    onClick={() => {
-                      setClicked(option);
-                    }}
-                  >
-                    {option}
-                  </button>
-                </li>
-              </>
+                  {option}
+                </button>
+              </li>
             );
           }, [])}
         </ul>
