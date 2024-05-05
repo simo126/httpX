@@ -35,11 +35,11 @@ const Requestres = ({ setLoading, setResponse, setStatus }) => {
     console.log("requestBody", requestBody);
 
     const startTime = performance.now();
-    setStatus({ status: 666, time: null, size: null });
+    setStatus({ status: "Loading...", time: 0, size: "Loading..." });
     let statusCode = null;
     setLoading(true);
     // fetch(cors + url + qp,
-    fetch(url, {
+    fetch(url + qp, {
       method: method,
       headers: headers,
       body: method !== "GET" ? requestBody : undefined,

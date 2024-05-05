@@ -3,7 +3,7 @@ import React from "react";
 const Status = ({ status }) => {
   return (
     <div>
-      <div className="border-2 h-20 mx-56 mt-4">
+      <div className="border-2 h-20 mx-56 mt-4 dark:border-[#3c4143]">
         <h1 className="px-7 text-xl text-montserrat mt-2 font-montserrat">
           Response:
         </h1>

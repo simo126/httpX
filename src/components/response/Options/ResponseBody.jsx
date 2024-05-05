@@ -6,7 +6,7 @@ const ResponseBody = ({ response, loading }) => {
   const data = JSON.stringify(response);
   return (
     <>
-      <div className="overflow-hidden ">
+      <div className="h-56 overflow-y-auto p-2">
         {!loading ? <p>{data}</p> : <p>Loading...</p>}
         {/* <CodeMirror
           extensions={[json()]}

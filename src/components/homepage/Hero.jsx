@@ -3,7 +3,7 @@ import Circle from "../shapes/Circle";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-fachi  border-httpx border-b-4  h-64 flex justify-center items-center px-2 relative overflow-hidden">
+    <div className="w-full bg-fachi  border-httpx border-b-4  h-64 flex justify-center items-center px-2 relative overflow-hidden dark:bg-[#1e2022]">
       <img src={Logo} alt="httpXLOGO" height={100} width={100} />
       <h1 className="text-4xl sm:text-8xl px-4 text-httpx font-palanquin  font-bold">
         HttpX
