@@ -10,7 +10,7 @@ export default function App() {
   const [status, setStatus] = useState({ status: 0, time: 0, size: 0 });
   const [responseHeaders, setResponseHeaders] = useState([]);
   return (
-    <main className="dark:bg-[#181a1b]">
+    <main className="dark:bg-[#181a1b] h-screen">
       <Navbar />
 
       <Requestres

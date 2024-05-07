@@ -9,7 +9,7 @@ const ResponseBody = ({ response, loading }) => {
   const data = JSON.stringify(response);
 
   return (
-    <>
+    <div className="dark:bg-[#181a1b]">
       <div className="h-56 overflow-y-auto p-2 dark:hidden">
         {!loading ? (
           <CodeMirror
@@ -39,7 +39,7 @@ const ResponseBody = ({ response, loading }) => {
           <p>Loading...</p>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

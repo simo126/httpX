@@ -13,6 +13,7 @@ const QueryParameters = ({ setQueryParams, queryParams }) => {
   };
 
   const handleClick = () => {
+    if (!key || !value || queryParams.length > 10) return;
     const newQueryParam = {
       key: key,
       value: value,

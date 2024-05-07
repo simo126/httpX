@@ -4,7 +4,7 @@ import Response from "../response/Response";
 const Responseres = ({ response, loading, status, responseHeaders }) => {
   return (
     <>
-      <Status status={status} />
+      <Status status={status} response={response} />
       <Response
         response={response}
         loading={loading}

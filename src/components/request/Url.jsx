@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Url = ({ setUrl, url, setMethod, method, handleSend }) => {
   return (
-    <div className="flex mx-56 mt-10  ">
+    <div className="flex mx-56 mt-6  ">
       <select
         name="idk"
         value={method}

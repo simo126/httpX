@@ -18,7 +18,7 @@ const Requestres = ({
   setStatus,
   setResponseHeaders,
 }) => {
-  const [url, setUrl] = useState("");
+  const [url, setUrl] = useState("https://api.restful-api.dev/objects");
   const [method, setMethod] = useState("GET");
   const [queryParams, setQueryParams] = useState([]);
   const [requestHeaders, setRequestHeaders] = useState([]);
@@ -34,6 +34,10 @@ const Requestres = ({
         queryParams.map((param) => `${param.key}=${param.value}`).join("&")
       : "";
   const handleSend = () => {
+    if (!url) {
+      alert("URL is required.");
+      return;
+    }
     console.log("url", url);
     console.log("method", method);
     console.log("queryParams", queryParams);
@@ -62,6 +66,7 @@ const Requestres = ({
         } else {
           setLoading(false);
           setResponse();
+          alert("Response status: " + res.status);
           throw new Error("Response status: " + res.status);
         }
       })
@@ -78,6 +83,7 @@ const Requestres = ({
       })
       .catch((error) => {
         console.log("error", error);
+        alert("Something is Wrong");
       });
   };
   return (
