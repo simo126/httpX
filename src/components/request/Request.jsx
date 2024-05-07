@@ -22,13 +22,14 @@ function Request({
           {options.map((option) => {
             return (
               <li
-                className={clicked === option ? "choosen" : "notchoosen"}
+                className={clicked === option ? "choosen " : "notchoosen"}
                 key={option}
               >
                 <button
                   onClick={() => {
                     setClicked(option);
                   }}
+                  className="dark:text-white"
                 >
                   {option}
                 </button>

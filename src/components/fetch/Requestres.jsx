@@ -12,13 +12,19 @@ function bytesCalculator(bytes) {
     return bytes + " B";
   }
 }
-const Requestres = ({ setLoading, setResponse, setStatus }) => {
+const Requestres = ({
+  setLoading,
+  setResponse,
+  setStatus,
+  setResponseHeaders,
+}) => {
   const [url, setUrl] = useState("");
   const [method, setMethod] = useState("GET");
   const [queryParams, setQueryParams] = useState([]);
   const [requestHeaders, setRequestHeaders] = useState([]);
   const [requestBody, setRequestBody] = useState("");
-  const cors = "";
+
+  // const cors = "";
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
   requestHeaders.forEach((header) => headers.append(header.key, header.value));
@@ -38,7 +44,7 @@ const Requestres = ({ setLoading, setResponse, setStatus }) => {
     setStatus({ status: "Loading...", time: 0, size: "Loading..." });
     let statusCode = null;
     setLoading(true);
-    // fetch(cors + url + qp,
+
     fetch(url + qp, {
       method: method,
       headers: headers,
@@ -46,13 +52,14 @@ const Requestres = ({ setLoading, setResponse, setStatus }) => {
       mode: "cors",
     })
       .then((res) => {
+        const headersObject = Object.fromEntries(res.headers.entries());
+        setResponseHeaders(headersObject);
         statusCode = res.status;
         setStatus({ status: res.status, time: null, size: null });
 
         if (res.ok) {
           return res.json();
         } else {
-          //alert("To fix this issue, you can use CORS proxy services. https://cors-anywhere.herokuapp.com/corsdemo");
           setLoading(false);
           setResponse();
           throw new Error("Response status: " + res.status);

@@ -1,11 +1,15 @@
 import React from "react";
 import Status from "../response/Status";
 import Response from "../response/Response";
-const Responseres = ({ response, loading, status }) => {
+const Responseres = ({ response, loading, status, responseHeaders }) => {
   return (
     <>
       <Status status={status} />
-      <Response response={response} loading={loading} />
+      <Response
+        response={response}
+        loading={loading}
+        responseHeaders={responseHeaders}
+      />
     </>
   );
 };
