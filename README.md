@@ -10,7 +10,6 @@ HTTPX is a web client application designed to provide an intuitive and user-frie
 
 - Send GET, POST, PUT, DELETE, and other HTTP requests.
 - View detailed responses including status codes, headers, and body.
-- Save and manage favorite endpoints for quick access.
 - Customize request headers and parameters.
 - Responsive design for seamless usage on different devices.
 

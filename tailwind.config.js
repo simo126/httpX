@@ -20,7 +20,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#ECEEFF",
+         
         fachi: "#ecf4fd",
         httpx: "#458ded",
       },
