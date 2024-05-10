@@ -26,5 +26,5 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/httpx/",
+  base: "/httpX/",
 });
