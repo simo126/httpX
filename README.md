@@ -1,6 +1,11 @@
 # HTTPX
 
 HTTPX is a web client developed by Mohammed Sbaiti and Amine Laanaya using React.js and Tailwind CSS.
+<img src="/public/1.jpg" title="HomePage Light theme - Sbaiti Mohammed & Amine Laanya" >
+<img src="/public/2.jpg" title="HomePage Dark theme- Sbaiti Mohammed & Amine Laanya" >
+<img src="/public/3.jpg" title="App Light theme- Sbaiti Mohammed & Amine Laanya" >
+<img src="/public/4.jpg" title="App Dark theme- Sbaiti Mohammed & Amine Laanya" >
+
 
 ## Description
 
@@ -31,7 +36,7 @@ npm install
 
 1. Start the development server:
 
-npm start
+npm run dev
 
 2. Open your web browser and navigate to `http://localhost:5173`.
 
