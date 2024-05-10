@@ -6,7 +6,17 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        chunkSizeWarningLimit: 800, // Adjust this value as needed
+        manualChunks(id) {
+          // Check if the module is inside node_modules
+          if (id.includes("node_modules")) {
+            // Extract the name of the module from its path
+            return id
+              .toString()
+              .split("node_modules/")[1]
+              .split("/")[0]
+              .toString();
+          }
+        },
       },
     },
   },
