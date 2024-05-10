@@ -7,11 +7,11 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/httpx/",
     element: <Home />,
   },
   {
-    path: "/app",
+    path: "/httpx/app",
     element: <App />,
   },
 ]);

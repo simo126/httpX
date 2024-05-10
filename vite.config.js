@@ -22,9 +22,9 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "/api": "http://localhost:5173/app",
+      "/api": "http://localhost:5173/httpx/app",
     },
   },
   plugins: [react()],
-  base: "./",
+  base: "/httpx/",
 });
