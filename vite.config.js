@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   build: {
+    outDir: "dist",
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -26,5 +27,5 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/httpx/",
+  base: "/httpX/",
 });
