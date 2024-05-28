@@ -3,11 +3,11 @@ import Button from "../Button";
 
 const Url = ({ setUrl, url, setMethod, method, handleSend }) => {
   return (
-    <div className="flex mx-56 mt-6  ">
+    <div className="flex mt-6 mx-10 sm:mx-20 md:mx-42 lg:mx-56">
       <select
         name="idk"
         value={method}
-        className="h-12 px-4 text-httpx border-2 border-httpx font-medium  dark:focus:border-blue-500 dark:bg-[#121212] dark:border-[#3c4143]"
+        className="h-12 sm:px-4 text-httpx border-2 border-httpx font-medium  dark:focus:border-blue-500 dark:bg-[#121212] dark:border-[#3c4143]"
         onChange={(e) => setMethod(e.target.value)}
       >
         <option value="GET">GET</option>

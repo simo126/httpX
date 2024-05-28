@@ -26,7 +26,7 @@ const QueryParameters = ({ setQueryParams, queryParams }) => {
 
   return (
     <div className="flex justify-center flex-col over h-full my-4">
-      <div className=" text-sm flex h-10 justify-center items-start w-full gap-2 my-2 ">
+      <div className=" text-sm flex h-10 justify-center items-start w-full gap-2 my-2 px-2">
         <input
           type="text"
           placeholder="Key"
@@ -50,7 +50,7 @@ const QueryParameters = ({ setQueryParams, queryParams }) => {
       </div>
       {queryParams.map((queryParameter) => (
         <div
-          className=" text-sm flex justify-center items-start w-full  gap-2 mt-1 "
+          className=" text-sm flex justify-center items-start w-full  gap-2 mt-1 px-2 "
           key={queryParameter.id}
         >
           <div className="h-8 w-[30%]  py-2 px-2 outline-none border-2 border-gray-300  focus:border-blue-500 flex justify-start items-center dark:bg-[#121212] dark:text-white dark:border-[#3c4143]">
