@@ -8,7 +8,7 @@ const Response = ({ response, loading, responseHeaders }) => {
 
   return (
     <div className="dark:bg-[#181a1b] h-[19.5rem]">
-      <div className="border-2 h-72 mx-10 sm:mx-20 md:mx-42 lg:mx-56 my-4 dark:border-[#3c4143]">
+      <div className="border-2 h-72 mx-2 sm:mx-20 md:mx-42 lg:mx-56 my-4 dark:border-[#3c4143]">
         <ul className="flex justify-start items-center h-12  border-b-2  dark:border-[#3c4143] ">
           <li
             className={clicked === "Response Body" ? "choosen" : "notchoosen"}

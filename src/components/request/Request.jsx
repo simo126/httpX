@@ -17,7 +17,7 @@ function Request({
 
   return (
     <>
-      <div className="border-2 mx-10 sm:mx-20 md:mx-42 lg:mx-56 mt-4 dark:border-[#3c4143] dark:bg-[#181a1b] ">
+      <div className="border-2 mx-2 sm:mx-20 md:mx-42 lg:mx-56 mt-4 dark:border-[#3c4143] dark:bg-[#181a1b] ">
         <ul className="flex justify-start items-center h-12  border-b-2 dark:border-[#3c4143]">
           {options.map((option) => {
             return (

@@ -65,9 +65,7 @@ const Requestres = ({
           return res.json();
         } else {
           setLoading(false);
-          setResponse();
-          alert("Response status: " + res.status);
-          throw new Error("Response status: " + res.status);
+          setResponse(res.json());
         }
       })
       .then((data) => {
@@ -82,8 +80,16 @@ const Requestres = ({
         setLoading(false);
       })
       .catch((error) => {
-        console.log("error", error);
-        alert("Something is Wrong");
+        const now = new Date();
+
+        setResponse({
+          timestamp: now.toISOString(),
+          status: 404,
+          error: "Not Found",
+          path: url,
+        });
+        setStatus({ status: 404, time: null, size: null });
+        setLoading(false);
       });
   };
   return (

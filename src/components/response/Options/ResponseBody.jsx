@@ -36,7 +36,7 @@ const ResponseBody = ({ response, loading }) => {
             }}
           />
         ) : (
-          <p>Loading...</p>
+          <p className="dark:text-white">Loading...</p>
         )}
       </div>
     </div>
