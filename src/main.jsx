@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./Home.jsx";
 import "./index.css";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/httpx/",
+    path: "/",
     element: <Home />,
   },
   {
-    path: "/httpx/app",
+    path: "/app",
     element: <App />,
   },
 ]);
